@@ -31,8 +31,7 @@ print(server.get_hyper_index(res.get('next_index'), page_size))
 del server._Server__indexed_dataset[res.get('index')]
 print("Nb items: {}".format(len(server._Server__indexed_dataset)))
 
-# 4- request the initial index aggain
-# -> first data retrieves is not the same as first request
+# 4- request the initial index again
 print(server.get_hyper_index(index, page_size))
 
 # 5- request again initial next index -> same data page as the request 2-
